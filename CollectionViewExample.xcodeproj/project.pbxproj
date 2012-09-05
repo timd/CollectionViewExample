@@ -15,6 +15,9 @@
 		22FF883815F76E6900D6EACF /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 22FF883715F76E6900D6EACF /* AppDelegate.m */; };
 		22FF883B15F76E6900D6EACF /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 22FF883A15F76E6900D6EACF /* ViewController.m */; };
 		22FF883E15F76E6A00D6EACF /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 22FF883C15F76E6A00D6EACF /* ViewController.xib */; };
+		22FF884815F7A4C100D6EACF /* CVCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 22FF884715F7A4C100D6EACF /* CVCell.m */; };
+		22FF884A15F7A66900D6EACF /* CVCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 22FF884915F7A66900D6EACF /* CVCell.xib */; };
+		22FF885215F7BBF400D6EACF /* NibCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 22FF885115F7BBF400D6EACF /* NibCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +34,10 @@
 		22FF883915F76E6900D6EACF /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		22FF883A15F76E6900D6EACF /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		22FF883D15F76E6A00D6EACF /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController.xib; sourceTree = "<group>"; };
+		22FF884615F7A4C100D6EACF /* CVCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CVCell.h; sourceTree = "<group>"; };
+		22FF884715F7A4C100D6EACF /* CVCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CVCell.m; sourceTree = "<group>"; };
+		22FF884915F7A66900D6EACF /* CVCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CVCell.xib; sourceTree = "<group>"; };
+		22FF885115F7BBF400D6EACF /* NibCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NibCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,11 +84,10 @@
 		22FF882D15F76E6900D6EACF /* CollectionViewExample */ = {
 			isa = PBXGroup;
 			children = (
-				22FF883615F76E6900D6EACF /* AppDelegate.h */,
-				22FF883715F76E6900D6EACF /* AppDelegate.m */,
-				22FF883915F76E6900D6EACF /* ViewController.h */,
-				22FF883A15F76E6900D6EACF /* ViewController.m */,
-				22FF883C15F76E6A00D6EACF /* ViewController.xib */,
+				22FF884D15F7BA7100D6EACF /* App delegate */,
+				22FF884E15F7BA7E00D6EACF /* Collection view */,
+				22FF885015F7BA9D00D6EACF /* Subclass-based cells */,
+				22FF884F15F7BA9600D6EACF /* Nib-based cells */,
 				22FF882E15F76E6900D6EACF /* Supporting Files */,
 			);
 			path = CollectionViewExample;
@@ -96,6 +102,43 @@
 				22FF883515F76E6900D6EACF /* CollectionViewExample-Prefix.pch */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		22FF884D15F7BA7100D6EACF /* App delegate */ = {
+			isa = PBXGroup;
+			children = (
+				22FF883615F76E6900D6EACF /* AppDelegate.h */,
+				22FF883715F76E6900D6EACF /* AppDelegate.m */,
+			);
+			name = "App delegate";
+			sourceTree = "<group>";
+		};
+		22FF884E15F7BA7E00D6EACF /* Collection view */ = {
+			isa = PBXGroup;
+			children = (
+				22FF883915F76E6900D6EACF /* ViewController.h */,
+				22FF883A15F76E6900D6EACF /* ViewController.m */,
+				22FF883C15F76E6A00D6EACF /* ViewController.xib */,
+			);
+			name = "Collection view";
+			sourceTree = "<group>";
+		};
+		22FF884F15F7BA9600D6EACF /* Nib-based cells */ = {
+			isa = PBXGroup;
+			children = (
+				22FF885115F7BBF400D6EACF /* NibCell.xib */,
+			);
+			name = "Nib-based cells";
+			sourceTree = "<group>";
+		};
+		22FF885015F7BA9D00D6EACF /* Subclass-based cells */ = {
+			isa = PBXGroup;
+			children = (
+				22FF884615F7A4C100D6EACF /* CVCell.h */,
+				22FF884715F7A4C100D6EACF /* CVCell.m */,
+				22FF884915F7A66900D6EACF /* CVCell.xib */,
+			);
+			name = "Subclass-based cells";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -151,6 +194,8 @@
 			files = (
 				22FF883215F76E6900D6EACF /* InfoPlist.strings in Resources */,
 				22FF883E15F76E6A00D6EACF /* ViewController.xib in Resources */,
+				22FF884A15F7A66900D6EACF /* CVCell.xib in Resources */,
+				22FF885215F7BBF400D6EACF /* NibCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -164,6 +209,7 @@
 				22FF883415F76E6900D6EACF /* main.m in Sources */,
 				22FF883815F76E6900D6EACF /* AppDelegate.m in Sources */,
 				22FF883B15F76E6900D6EACF /* ViewController.m in Sources */,
+				22FF884815F7A4C100D6EACF /* CVCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -245,6 +291,7 @@
 				GCC_PREFIX_HEADER = "CollectionViewExample/CollectionViewExample-Prefix.pch";
 				INFOPLIST_FILE = "CollectionViewExample/CollectionViewExample-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 2;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -256,6 +303,7 @@
 				GCC_PREFIX_HEADER = "CollectionViewExample/CollectionViewExample-Prefix.pch";
 				INFOPLIST_FILE = "CollectionViewExample/CollectionViewExample-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 2;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
